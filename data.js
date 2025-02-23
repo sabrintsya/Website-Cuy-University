@@ -27,7 +27,9 @@
 const nama = "Sabrina natasya bilbina";
 let usia = 30;
 
-const biodata = document.getElementById('biodata');
+let biodata = document.getElementById('biodata');
+// document getelement by id dari dokumen html ID = # Yaitu biodata
+console.log(biodata);
 
 function generateUsia () {
     let generasi;
@@ -48,7 +50,8 @@ function generateUsia () {
         generasi ="generasi bayi";
     }
 
-    return console.log('generasi saya adalah', generasi);
+    return biodata.innerHTML = generasi;
+    // membalikan dan menampilkan data biodata generasi ke html
     
 }
 
